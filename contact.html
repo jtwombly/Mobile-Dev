@@ -4,7 +4,7 @@
         <title> Contact Us </title>
         <meta charset = "utf-8">
 	<link rel="stylesheet" href="style.css" type="text/css">
-
+	<link rel="icon" type="image/jpg" href="icon.jpg">
     </head>
     <body>
         <div id="wrapper">
@@ -14,12 +14,12 @@
             <nav>
                  <ul class="contact-navigation">
                     <li> <a href="mountain.html" onmouseover="OpenMenu('mountainsubmenu')"> The Mountain </a>
-						<ul id="mountainsubmenu" onmouseover="KeepSubMenu()" onmouseout="CloseMenu()">
+						<ul id="msubmenu" onmouseover="KeepSubMenu()" onmouseout="CloseMenu()">
                             <li><a href="history.html"> History </a></li>
 						</ul>
 					</li>
                     <li> <a href="tickets.html" onmouseover="OpenMenu('ticketlinksubmenu')"> Ticket Pricing </a>
-						<ul id="ticketlinksubmenu" onmouseover="KeepSubMenu()" onmouseout="CloseMenu()">
+						<ul id="tsubmenu" onmouseover="KeepSubMenu()" onmouseout="CloseMenu()">
                             <li><a href="rent.html"> Rental Equipment</a></li>
 						</ul>
 					</li>
@@ -33,12 +33,12 @@
 		</div>
 		<div id ="right">		
                     <h3> Contact Information: </h3> 
-					<p> Emails: <a href="mailto:warren.steins@mymail.champlain.edu"> warren.steins@mymail.champlain.edu</a> &nbsp
+					<p> Emails: <a href="mailto:warren.steins@mymail.champlain.edu"> warren.steins@mymail.champlain.edu</a> &nbsp;
 								<a href="mailto:jordan.twombly@mymail.champlain.edu"> jordan.twombly@mymail.champlain.edu</a>
 					</p>
                 <div>
                     <h3>Join Our Newsletter</h3>
-                     <form name = "newsletter" id = "newsletter" method = "post" action = "">
+                     <form name = "newsletter" id = "newsletter" method = "post">
                 <label for = "FirstName">First Name</label>
                 <input type = "text" name = "FirstName" id = "FirstName" required = "required">
                 <br>

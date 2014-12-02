@@ -5,9 +5,9 @@ html, body{ background: linear-gradient(to bottom, #CCFFFF, #99CCFF); height:100
 header{ text-align:center;
 }
 
-#content{ height:25em; width: 79%; margin:auto; border: 1px solid black; box-shadow: 5px 5px 5px #000033; background:linear-gradient(#99FFFF, #0099FF);
+#content, #m-content{ height:25em; width: 79%; margin:auto; border: 1px solid black; box-shadow: 5px 5px 5px #000033; background:linear-gradient(#99FFFF, #0099FF);
 }
-#left {width:45%; height: 23em; float: left; margin: 1%;
+#left, #map-left {width:45%; height: 23em; float: left; margin: 1%;
 }
 #mountainpicture{height:100%; width:100%; background-image: url(mountain.jpg); background-repeat: no-repeat; background-size: cover;
 }
@@ -38,7 +38,10 @@ nav{/*float:left;*/ height: 8em; width:100%;
 }
 .navigation a { display:block; height:100%; width:100%; text-decoration:none; color:white;
 }
-
+#inlink{display:block; margin:1em; height:2em; text-align:center; padding:.5em; border-radius:1em; background:linear-gradient(to right, blue, skyblue);
+}
+#inlink a{display:block; height:100%; width:100%; text-decoration:none; color:white;
+}
 footer{ margin: auto; margin-top:1em; height: auto; width: 100%; float: left; text-align: right;
 }
 
@@ -54,7 +57,12 @@ footer{ margin: auto; margin-top:1em; height: auto; width: 100%; float: left; te
 }
 .contact-navigation a { display:block; height:100%; width:100%; text-decoration:none; color:white;
 }
-.contact-navigation #mountainsubmenu, #ticketlinksubmenu{display: none;}
+.contact-navigation #msubmenu, #tsubmenu{display: none;}
+
+#historyh3{text-align:center; font-size:200%
+}
+#historyp{font-size:150%; padding:.5em;
+}
 
 @media only screen and (max-width: 768px){
 
@@ -62,26 +70,35 @@ footer{ margin: auto; margin-top:1em; height: auto; width: 100%; float: left; te
 
 #content{ width:100%;
 }
-#mountainsubmenu, #ticketlinksubmenu { display:none;
+#msubmenu, #tsubmenu { display:none;
 }
 
 
 }
 
 @media only screen and (max-width: 480px) {
-
-    body {margin: 0;}
+html body{ height:auto;
+}
+body {margin: 0;
+}
     
 nav{height:15em;
 }
-.navigation{ flex-direction:column; height:12em;
+.navigation, .contact-navigation{ flex-direction:column; height:12em;
 }
-
-#content{float:none; width:100%; border:none; box-shadow:none;
+#content{float:none; width:100%; border:none; box-shadow:none; background:none;
 }
-#left{float:none; width:100%;
+#m-content{float:none; width:100%; border:none; box-shadow:none; background:none; height:40em;
+}
+#left{float:none; display:none;
+}
+#map-left{float:none;width:100%;
 }
 #right{float:none; width:100%; border-top: 1px solid black; border-left:none;
 }
-#mountainsubmenu, #ticketlinksubmenu { display:none;
+#msubmenu, #tsubmenu { display:none;
+}
+#historyp{font-size:100%;
+}
+footer{float:none;}
 }

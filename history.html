@@ -4,6 +4,7 @@
         <title> Mount Olympus Skiing </title>
         <meta charset = "utf-8">
 	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="icon" type="image/jpg" href="icon.jpg">
     </head>
     <body>
         <div id="wrapper">
@@ -12,9 +13,9 @@
             </header>
             <nav>
                 <ul class="navigation">
-                    <li> <a href="index.html" onmouseover="OpenMenu('mountainsubmenu')"> Home </a></li>
-                    <li> <a href="tickets.html" onmouseover="OpenMenu('ticketlinksubmenu')"> Ticket Pricing </a>
-						<ul id="ticketlinksubmenu" onmouseover="KeepSubMenu()" onmouseout="CloseMenu()">
+                    <li> <a href="index.html" onmouseover="OpenMenu('msubmenu')"> Home </a></li>
+                    <li> <a href="tickets.html" onmouseover="OpenMenu('tsubmenu')"> Ticket Pricing </a>
+						<ul id="tsubmenu" onmouseover="KeepSubMenu()" onmouseout="CloseMenu()">
                             <li><a href="rent.html"> Rental Equipment</a></li>
 						</ul>
 					</li>
@@ -23,8 +24,8 @@
                 </ul>
             </nav>
             <div id="content">
-                <h3 style = "text-align: center;">History of Mount Olympus</h3>
-                <p style = "font-size: 200%;">
+                <h3 id="historyh3">History of Mount Olympus</h3>
+                <p id="historyp">
                     In Greek mythology, the mountain was formed after the gods defeated the Titans. Mount Olympus then served as the home for those Twelve Olympians.<br> 
                     In reality, the mountain was created by the convergence of two tectonic plates, causing their edges to crumpling and being forced into the air.
                 <br> With such a historic mountain available we knew we needed to ski resort on it.

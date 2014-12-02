@@ -4,6 +4,7 @@
         <title> Mount Olympus Skiing </title>
         <meta charset = "utf-8">
 	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="icon" type="image/jpg" href="icon.jpg">
     </head>
     <body>
         <div id="wrapper">
@@ -12,8 +13,8 @@
             </header>
             <nav>
                 <ul class="navigation">
-                    <li> <a href="mountain.html" onmouseover="OpenMenu('mountainsubmenu')"> The Mountain </a>
-						<ul id="mountainsubmenu" onmouseover="KeepSubMenu()" onmouseout="CloseMenu()">
+                    <li> <a href="mountain.html" onmouseover="OpenMenu('msubmenu')"> The Mountain </a>
+						<ul id="msubmenu" onmouseover="KeepSubMenu()" onmouseout="CloseMenu()">
                             <li><a href="history.html"> History </a></li>
 						</ul>
 					</li>
@@ -27,14 +28,30 @@
                     <div id="ticketpicture"></div>
 		</div>
 		<div id ="right">
-                    <h2> Ticket Prices: </h2> 
-					<h3>Lift Tickets</h3>
-					<p> One Day Pass : $100 <br> Weeklong Pass: $500 </br> 
-					Season Pass: $2,000 </br> 
-					<h3>Resort prices</h3>
-					<p>One double bed: $300 per night <br>
-					Two double beds: $350 per night <br></p>
-                                        <ul class="navigation"> <li><a href="rent.html"> Rental Gear </a></li></ul>
+			<h2> Ticket Prices: </h2> 
+				<table border="1">
+					<caption>Lift Tickets</caption>
+					<tr>
+					<td> One day pass </td> <td> $100 </td>
+					</tr>
+					<tr>
+					<td> Weeklong Pass </td> <td> $500 </td>
+					</tr> 
+					<tr>
+					<td>Season Pass </td> <td> $2,000 </td>
+					<tr>
+				</table>
+				<br>
+				<table border= "1">
+					<caption>Resort prices</caption>
+					<tr>
+					<td>One double bed </td><td> $300 per night </td>
+					</tr>
+					<tr>
+					<td>Two double beds</td><td> $350 per night </td>
+					</tr>
+				</table>
+                       <div id="inlink"><a href="rent.html"> Rental Gear </a></div>
                 </div>
             </div>
             <footer>

@@ -4,6 +4,7 @@
         <title> The Mountain </title>
         <meta charset = "utf-8">
 		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="icon" type="image/jpg" href="icon.jpg">
     </head>
     <body>
         <div id="wrapper">
@@ -12,9 +13,9 @@
             </header>
             <nav>
                 <ul class="navigation">
-                    <li> <a href="index.html" onmouseover="OpenMenu('mountainsubmenu')"> Home </a></li>
-                    <li> <a href="tickets.html" onmouseover="OpenMenu('ticketlinksubmenu')"> Ticket Pricing </a>
-						<ul id="ticketlinksubmenu" onmouseover="KeepSubMenu()" onmouseout="CloseMenu()">
+                    <li> <a href="index.html"> Home </a></li>
+                    <li> <a href="tickets.html" onmouseover="OpenMenu('tsubmenu')"> Ticket Pricing </a>
+						<ul id="tsubmenu" onmouseover="KeepSubMenu()" onmouseout="CloseMenu()">
                             <li><a href="rent.html"> Rental Equipment</a></li>
 						</ul>
 					</li>
@@ -22,14 +23,14 @@
                     <li> <a href="schedule.html" onmouseover="CloseMenu()"> Schedule </a> </li>
                 </ul>
             </nav>
-            <div id="content">
-                <div id="left">
+            <div id="m-content">
+                <div id="map-left">
                     <div id="slope-map"></div>
 		</div>
 		<div id ="right">		
                     <h3>This is the layout of the trails found on Mount Olympus</h3>
-                    <br><br><br><br><br><br><br><br><br>
-                    <ul class="navigation"> <li><a href="history.html"> History </a></li></ul>
+                    <br><br>
+                    <div id="inlink"><a href="history.html"> History </a></div>
 		</div>
             </div>
             <footer>

@@ -4,6 +4,7 @@
         <title> Schedule </title>
         <meta charset = "utf-8">
 	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="icon" type="image/jpg" href="icon.jpg">
     </head>
     <body>
         <div id="wrapper">
@@ -11,15 +12,15 @@
                 <h1> Schedule </h1>
             </header>
             <nav>
-               <ul class="navigation">
-                    <li> <a href="mountain.html" onmouseover="OpenMenu('mountainsubmenu')"> The Mountain </a>
-						<ul id="mountainsubmenu" onmouseover="KeepSubMenu()" onmouseout="CloseMenu()">
-                            <li><a href="history.html"> History </a></li>
+                <ul class="navigation">
+                    <li> <a href="mountain.html" onmouseover="OpenMenu('msubmenu')"> The Mountain </a>
+						<ul id="msubmenu" onmouseover="KeepSubMenu()" onmouseout="CloseMenu()">
+							<li><a href="history.html">History</a></li>
 						</ul>
 					</li>
-                    <li> <a href="tickets.html" onmouseover="OpenMenu('ticketlinksubmenu')"> Ticket Pricing </a>
-						<ul id="ticketlinksubmenu" onmouseover="KeepSubMenu()" onmouseout="CloseMenu()">
-                            <li><a href="rent.html"> Rental Equipment</a></li>
+                    <li> <a href="tickets.html" onmouseover="OpenMenu('tsubmenu')"> Ticket Pricing </a>
+						<ul id="tsubmenu" onmouseover="KeepSubMenu()" onmouseout="CloseMenu()">
+							<li><a href="rent.html">Rentals</a></li>
 						</ul>
 					</li>
                     <li> <a href="contact.html" onmouseover="CloseMenu()"> Contact Page </a></li>
@@ -46,11 +47,13 @@
                 @ Warren and Jordan
             </footer>	
        </div>
-       <script>
+	
+		<script>
+		
 	var Item; //Hold current open menu item
 	var Timer;	//Hold timeout value
-	document.onclick=CloseMenu(); //Hide the menu after clicking outside it
-    document.onload=CloseMenu();
+	document.onclick=CloseMenu; //Hide the menu after clicking outside it
+	
 	function OpenMenu(Menu)
 	{
 		//if open, close it
@@ -83,5 +86,5 @@
 		window.clearTimeout(Timer);
 	}
 	</script>
-    </body>
+</body>
 </html>
